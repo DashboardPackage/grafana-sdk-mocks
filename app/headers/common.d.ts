@@ -3,6 +3,16 @@
 declare var System: any;
 
 // dummy modules
+declare module '@grafana/data' {
+  var grafanaData: any;
+  export default grafanaData;
+}
+
+declare module '@grafana/ui' {
+  var grafanaUI: any;
+  export default grafanaUI;
+}
+
 declare module 'app/core/config' {
   var config: any;
   export default config;
@@ -36,16 +46,6 @@ declare module 'jquery' {
 declare module 'q' {
   var q: any;
   export default q;
-}
-
-declare module '@grafana/data' {
-  var grafanaData: any;
-  export default grafanaData;
-}
-
-declare module '@grafana/ui' {
-  var grafanaUI: any;
-  export default grafanaUI;
 }
 
 declare module 'app/core/time_series2' {
