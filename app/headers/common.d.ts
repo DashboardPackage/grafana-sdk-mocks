@@ -43,6 +43,11 @@ declare module '@grafana/data' {
   export default grafanaData;
 }
 
+declare module '@grafana/ui' {
+  var grafanaUI: any;
+  export default grafanaUI;
+}
+
 declare module 'app/core/time_series2' {
   var time_series2: any;
   export default time_series2;
