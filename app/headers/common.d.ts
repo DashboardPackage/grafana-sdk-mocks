@@ -23,6 +23,16 @@ declare module 'app/core/core_module' {
   export default coreModule;
 }
 
+declare module 'app/features/i18n' {
+  var i18n: any;
+  export default i18n;
+}
+
+declare module 'app/core/utils/fontsize' {
+  var fontsize: any;
+  export default fontsize;
+}
+
 declare module 'lodash' {
   var lodash: any;
   export default lodash;
